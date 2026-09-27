@@ -13,3 +13,10 @@ numbers = [10, 20, 30, 40, 50]
 
 for number in numbers:
     print(number)
+
+
+# 3. O(n²) - Quadratic Space
+
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+print(matrix)
