@@ -63,3 +63,37 @@ while num > 0:
 
 
 print(count)
+
+
+"""
+Write a program to check if a number is palindrome or not.
+"""
+
+n = 12345
+
+num = n
+result = 0
+
+while num > 0:
+
+    last_digit = num % 10
+    result = (result * 10) + last_digit
+    num = num // 10
+
+print(result)
+
+
+# Another one
+
+n = 786593
+
+num = n
+result = 0
+
+while num > 0:
+
+    last_digit = num % 10
+    result = (result * 10) + last_digit
+    num = num // 10
+
+print(result)
