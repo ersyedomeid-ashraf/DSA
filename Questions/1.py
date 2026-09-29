@@ -153,3 +153,21 @@ while num > 0:
     num = num // 10
 
 print(total == n)
+
+
+# Another one
+
+n = 6557
+
+num = n
+total = 0
+
+nod = len(str(n))
+
+while num > 0:
+
+    large_digit = num % 10
+    total = total + (large_digit**nod)
+    num = num // 10
+
+print(total == n)
