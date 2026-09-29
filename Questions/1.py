@@ -132,3 +132,24 @@ while num > 0:
 
 
 print(count)
+
+
+"""
+Write a program to check whether a given number is an Armstrong number or not using a while loop.
+"""
+
+
+n = 153
+
+num = n
+total = 0
+
+nod = len(str(n))
+
+while num > 0:
+
+    large_digit = num % 10
+    total = total + (large_digit**nod)
+    num = num // 10
+
+print(total == n)
