@@ -187,3 +187,21 @@ for i in range(1, num + 1):
         result.append(i)
 
 print(result)
+
+
+"""
+Write a program to find and print all the factors of the given number.
+"""
+
+num = 10
+
+result = []
+
+for i in range(1, num // 2 + 1):
+
+    if num % i == 0:
+        result.append(i)
+
+result.append(num)
+
+print(result)
