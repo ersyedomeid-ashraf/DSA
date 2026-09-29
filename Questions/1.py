@@ -171,3 +171,19 @@ while num > 0:
     num = num // 10
 
 print(total == n)
+
+
+"""
+Write a program to find and print all the factors of the given number.
+"""
+
+num = 20
+
+result = []
+
+for i in range(1, num + 1):
+
+    if num % i == 0:
+        result.append(i)
+
+print(result)
