@@ -282,3 +282,22 @@ for i in range(1, num + 1):
         result.append(i)
 
 print(result)
+
+
+"""
+Store the frequency of each element in a dictionary.
+"""
+
+nums = [2, 5, 2, 8, 5, 2, 9, 8, 5, 1]
+
+freq_map = {}
+
+for i in range(0, len(nums)):
+
+    if nums[i] in freq_map:
+        freq_map[nums[i]] += 1
+
+    else:
+        freq_map[nums[i]] = 1
+
+print(freq_map)
