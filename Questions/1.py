@@ -266,3 +266,19 @@ for i in range(0, n):
     hash_map[nums[i]] = hash_map.get(nums[i], 0) + 1
 
 print(hash_map)
+
+
+"""
+Write a program to find and print all the factors of the given number.
+"""
+
+num = 45
+
+result = []
+
+for i in range(1, num + 1):
+
+    if num % i == 0:
+        result.append(i)
+
+print(result)
