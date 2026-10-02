@@ -393,3 +393,25 @@ for i in range(1, int(sqrt(num)) + 1):
             result.append(num // i)
 
 print(sum(result))
+
+
+"""
+Write a program to count the total number of factors.
+"""
+
+from math import sqrt
+
+num = 36
+count = 0
+
+for i in range(1, int(sqrt(num)) + 1):
+
+    if num % i == 0:
+        count += 1
+
+        pair = num // i
+
+        if pair != i:
+            count += 1
+
+print(count)
