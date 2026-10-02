@@ -373,3 +373,23 @@ for i in range(1, int(sqrt(num)) + 1):
 result.sort()
 
 print(result)
+
+
+"""
+Write a program to find the sum of all factors
+"""
+
+from math import sqrt
+
+num = 65
+result = []
+
+for i in range(1, int(sqrt(num)) + 1):
+
+    if num % i == 0:
+        result.append(i)
+
+        if num // i != i:
+            result.append(num // i)
+
+print(sum(result))
