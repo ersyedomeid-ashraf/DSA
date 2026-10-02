@@ -347,3 +347,29 @@ for i in range(1, int(sqrt(num)) + 1):
 result.sort()
 
 print(result)
+
+
+"""
+Write a program to print all odd factors
+"""
+
+from math import sqrt
+
+num = 36
+result = []
+
+for i in range(1, int(sqrt(num)) + 1):
+
+    if num % i == 0:
+
+        if i % 2 != 0:
+            result.append(i)
+
+        pair = num // i
+
+        if pair != i and pair % 2 != 0:
+            result.append(pair)
+
+result.sort()
+
+print(result)
