@@ -415,3 +415,22 @@ for i in range(1, int(sqrt(num)) + 1):
             count += 1
 
 print(count)
+
+
+"""
+Write a program to check whether a given number is a perfect number or not using a while loop.
+"""
+
+
+n = 28
+
+num = 1
+total = 0
+
+while num < n:
+    if n % num == 0:
+        total = total + num
+
+    num = num + 1
+
+print(total == n)
