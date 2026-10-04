@@ -434,3 +434,20 @@ while num < n:
     num = num + 1
 
 print(total == n)
+
+
+"""
+Write a program to find the product of all digits of a given number using a while loop.
+"""
+
+
+n = 234
+
+product = 1
+
+while n > 0:
+    digit = n % 10
+    product = product * digit
+    n = n // 10
+
+print(product)
