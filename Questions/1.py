@@ -525,3 +525,20 @@ while n > 0:
     n = n // 10
 
 print("Zeros:", zero)
+
+
+"""
+Write a program to find the factorial of a given number
+using a while loop.
+"""
+
+n = 6
+
+factorial = 1
+i = 1
+
+while i <= n:
+    factorial = factorial * i
+    i = i + 1
+
+print("Factorial:", factorial)
