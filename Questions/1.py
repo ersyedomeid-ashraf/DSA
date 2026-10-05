@@ -505,3 +505,23 @@ i = 1
 while i <= 10:
     print(n * i)
     i = i + 1
+
+
+"""
+Write a program to count the number of zeros
+in a given number using a while loop.
+"""
+
+n = 2050407
+
+zero = 0
+
+while n > 0:
+    digit = n % 10
+
+    if digit == 0:
+        zero = zero + 1
+
+    n = n // 10
+
+print("Zeros:", zero)
