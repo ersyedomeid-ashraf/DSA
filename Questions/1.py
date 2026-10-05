@@ -474,3 +474,34 @@ while n > 0:
 
 print("Even:", even)
 print("Odd:", odd)
+
+
+"""
+Write a program to print the multiplication table of a given number using a while loop.
+"""
+
+n = 7
+
+i = 1
+
+while i <= 10:
+    print(n * i)
+    i = i + 1
+
+
+n = 56
+
+i = 1
+
+while i <= 10:
+    print(n * i)
+    i = i + 1
+
+
+n = 8987
+
+i = 1
+
+while i <= 10:
+    print(n * i)
+    i = i + 1
