@@ -542,3 +542,19 @@ while i <= n:
     i = i + 1
 
 print("Factorial:", factorial)
+
+
+"""
+Write a program to find the largest among three given numbers.
+"""
+
+a = 25
+b = 67
+c = 42
+
+if a > b and a > c:
+    print("Largest:", a)
+elif b > a and b > c:
+    print("Largest:", b)
+else:
+    print("Largest:", c)
