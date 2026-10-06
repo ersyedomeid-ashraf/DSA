@@ -558,3 +558,17 @@ elif b > a and b > c:
     print("Largest:", b)
 else:
     print("Largest:", c)
+
+
+"""
+Write a program to print all numbers between 1 and 50
+which are divisible by 4.
+"""
+
+i = 1
+
+while i <= 50:
+    if i % 4 == 0:
+        print(i)
+
+    i = i + 1
