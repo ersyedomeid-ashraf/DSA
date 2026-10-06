@@ -572,3 +572,35 @@ while i <= 50:
         print(i)
 
     i = i + 1
+
+
+"""
+Write a program to calculate the power of a number
+"""
+
+base = 4
+power = 3
+
+result = 1
+i = 1
+
+while i <= power:
+    result = result * base
+    i = i + 1
+
+print("Result:", result)
+
+
+# Another one
+
+base = 6
+power = 8
+
+result = 1
+i = 1
+
+while i <= power:
+    result = result * base
+    i = i + 1
+
+print("Result:", result)
