@@ -622,3 +622,20 @@ for num in numbers:
         frequency[num] = 1
 
 print(frequency)
+
+
+"""
+Write a program to find all duplicate elements in a list using hashing.
+"""
+
+
+numbers = [10, 20, 30, 20, 40, 10, 50]
+
+frequency = {}
+
+for num in numbers:
+    frequency[num] = frequency.get(num, 0) + 1
+
+for num in frequency:
+    if frequency[num] > 1:
+        print(num)
