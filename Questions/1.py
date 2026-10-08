@@ -639,3 +639,21 @@ for num in numbers:
 for num in frequency:
     if frequency[num] > 1:
         print(num)
+
+
+"""
+Write a program to find the common elements between two lists using hashing.
+"""
+
+
+list1 = [10, 20, 30, 40, 50]
+list2 = [30, 40, 50, 60, 70]
+
+seen = {}
+
+for num in list1:
+    seen[num] = True
+
+for num in list2:
+    if num in seen:
+        print(num)
