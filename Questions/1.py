@@ -657,3 +657,21 @@ for num in list1:
 for num in list2:
     if num in seen:
         print(num)
+
+
+"""
+Write a program to find the first repeating element in a list using hashing.
+"""
+
+
+numbers = [10, 20, 30, 40, 20, 50, 10]
+
+frequency = {}
+
+for num in numbers:
+    frequency[num] = frequency.get(num, 0) + 1
+
+for num in numbers:
+    if frequency[num] > 1:
+        print("First repeating element:", num)
+        break
