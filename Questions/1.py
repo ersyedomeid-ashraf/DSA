@@ -693,3 +693,18 @@ for num in numbers:
     if frequency[num] == 1:
         print("First non-repeating element:", num)
         break
+
+
+"""
+Write a program to count the frequency of each character in a string using hashing.
+"""
+
+
+text = "programming"
+
+frequency = {}
+
+for char in text:
+    frequency[char] = frequency.get(char, 0) + 1
+
+print(frequency)
