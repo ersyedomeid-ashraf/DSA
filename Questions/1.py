@@ -675,3 +675,21 @@ for num in numbers:
     if frequency[num] > 1:
         print("First repeating element:", num)
         break
+
+
+"""
+Write a program to find the first non-repeating element in a list using hashing.
+"""
+
+
+numbers = [10, 20, 10, 30, 20, 40, 30]
+
+frequency = {}
+
+for num in numbers:
+    frequency[num] = frequency.get(num, 0) + 1
+
+for num in numbers:
+    if frequency[num] == 1:
+        print("First non-repeating element:", num)
+        break
