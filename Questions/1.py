@@ -708,3 +708,24 @@ for char in text:
     frequency[char] = frequency.get(char, 0) + 1
 
 print(frequency)
+
+
+"""
+Check whether two strings are anagrams using hashing.
+"""
+
+str1 = "listen"
+str2 = "silent"
+
+frequency = {}
+
+for char in str1:
+    frequency[char] = frequency.get(char, 0) + 1
+
+for char in str2:
+    frequency[char] = frequency.get(char, 0) - 1
+
+if all(value == 0 for value in frequency.values()):
+    print("Anagrams")
+else:
+    print("Not anagrams")
