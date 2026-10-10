@@ -729,3 +729,19 @@ if all(value == 0 for value in frequency.values()):
     print("Anagrams")
 else:
     print("Not anagrams")
+
+
+"""
+Write a program to print elements that occur exactly once in a list.
+"""
+
+numbers = [1, 2, 3, 2, 4, 1, 5]
+
+frequency = {}
+
+for num in numbers:
+    frequency[num] = frequency.get(num, 0) + 1
+
+for num in numbers:
+    if frequency[num] == 1:
+        print(num, end=" ")
