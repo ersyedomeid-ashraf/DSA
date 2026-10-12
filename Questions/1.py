@@ -745,3 +745,19 @@ for num in numbers:
 for num in numbers:
     if frequency[num] == 1:
         print(num, end=" ")
+
+
+"""
+Write a program to print elements whose frequency is exactly 2.
+"""
+
+numbers = [1, 2, 3, 2, 4, 1, 5, 3, 3]
+
+frequency = {}
+
+for num in numbers:
+    frequency[num] = frequency.get(num, 0) + 1
+
+for num in frequency:
+    if frequency[num] == 2:
+        print(num, end=" ")
