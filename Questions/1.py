@@ -761,3 +761,19 @@ for num in numbers:
 for num in frequency:
     if frequency[num] == 2:
         print(num, end=" ")
+
+
+"""
+Write a program to find the frequency of a given character in a string.
+"""
+
+text = "programming"
+
+target = "g"
+
+frequency = {}
+
+for char in text:
+    frequency[char] = frequency.get(char, 0) + 1
+
+print(frequency.get(target, 0))
