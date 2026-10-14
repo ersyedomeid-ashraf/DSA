@@ -15,3 +15,20 @@ def func():
 
 
 func()
+
+
+"""
+Write a program to print 'X' N times using recursion with parameters.
+"""
+
+
+def func(x, n):
+    if n == 0:
+        return
+
+    print(x)
+
+    func(x, n - 1)
+
+
+func(5, 4)
