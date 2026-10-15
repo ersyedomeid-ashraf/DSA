@@ -80,3 +80,19 @@ def func(i, n):
 
 
 func(2, 6)
+
+
+"""
+WAP to print the number 7 four times using recursion with parameters.
+"""
+
+
+def func(x, n):
+    if n == 0:
+        return
+
+    print(x)
+    func(x, n - 1)
+
+
+func(7, 4)
