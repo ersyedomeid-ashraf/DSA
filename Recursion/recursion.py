@@ -64,3 +64,19 @@ def func(n):
 
 
 func(5)
+
+
+"""
+ WAP to print numbers from 28 to 63 using recursion with parameters.
+"""
+
+
+def func(i, n):
+    if i > n:
+        return
+
+    print(i)
+    func(i + 1, n)
+
+
+func(2, 6)
