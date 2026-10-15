@@ -48,3 +48,19 @@ def func(i, n):
 
 
 func(1, 10)
+
+
+"""
+WAP to print "Python" 5 times using recursion with parameters.
+"""
+
+
+def func(n):
+    if n == 0:
+        return
+
+    print("Python")
+    func(n - 1)
+
+
+func(5)
