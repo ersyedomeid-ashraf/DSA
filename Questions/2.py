@@ -12,3 +12,19 @@ def func(i):
 
 
 func(7)
+
+
+"""
+WAP to print the multiplication table of a number using recursion.
+"""
+
+
+def func(x, i):
+    if i > 10:
+        return
+
+    print(x, "x", i, "=", x * i)
+    func(x, i + 1)
+
+
+func(46, 1)
