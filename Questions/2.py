@@ -28,3 +28,19 @@ def func(x, i):
 
 
 func(46, 1)
+
+
+"""
+Write a program to print each character of a string using recursion.
+"""
+
+
+def func(text, i):
+    if i == len(text):
+        return
+
+    print(text[i])
+    func(text, i + 1)
+
+
+func("Python", 0)
