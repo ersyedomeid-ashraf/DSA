@@ -44,3 +44,19 @@ def func(text, i):
 
 
 func("Python", 0)
+
+
+"""
+WAP to print all elements of a list using recursion.
+"""
+
+
+def func(arr, i):
+    if i == len(arr):
+        return
+
+    print(arr[i])
+    func(arr, i + 1)
+
+
+func([10, 20, 30, 40], 0)
