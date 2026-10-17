@@ -60,3 +60,32 @@ def func(arr, i):
 
 
 func([10, 20, 30, 40], 0)
+
+
+"""
+Write a program to print list elements in reverse order using recursion.
+"""
+
+
+def func(arr, i):
+    if i < 0:
+        return
+
+    print(arr[i])
+    func(arr, i - 1)
+
+
+func([10, 20, 30, 40], 3)
+
+# Another one
+
+
+def func(arr, i):
+    if i < 0:
+        return
+
+    print(arr[i])
+    func(arr, i - 1)
+
+
+func([8758, 2543, 4550, 780], 3)
