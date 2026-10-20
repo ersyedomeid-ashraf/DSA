@@ -44,3 +44,19 @@ def func(arr, i):
 
 
 func([10, 20, 30, 40], 3)
+
+
+"""
+WAP to print a string in reverse order using recursion.
+"""
+
+
+def func(text, i):
+    if i < 0:
+        return
+
+    print(text[i])
+    func(text, i - 1)
+
+
+func("FAIRYYYYY TAIL", 8)
