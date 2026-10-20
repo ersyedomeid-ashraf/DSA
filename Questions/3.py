@@ -28,3 +28,19 @@ def func(n):
 
 
 func(1234567890)
+
+
+"""
+WAP to print list elements in reverse order using recursion.
+"""
+
+
+def func(arr, i):
+    if i < 0:
+        return
+
+    print(arr[i])
+    func(arr, i - 1)
+
+
+func([10, 20, 30, 40], 3)
