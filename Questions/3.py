@@ -77,3 +77,19 @@ def func(count):
 
 
 func(2)
+
+
+"""
+WAP to print the character 'A' 3 times using recursion.
+"""
+
+
+def func(ch, count):
+    if count == 0:
+        return
+
+    print(ch)
+    func(ch, count - 1)
+
+
+func("A", 3)
