@@ -60,3 +60,20 @@ def func(text, i):
 
 
 func("FAIRYYYYY TAIL", 8)
+
+
+"""
+Write a program to print "Start" before the recursive call and "End" after the recursive call.
+"""
+
+
+def func(count):
+    if count == 0:
+        return
+
+    print("Start")
+    func(count - 1)
+    print("End")
+
+
+func(2)
