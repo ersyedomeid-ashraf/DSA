@@ -83,3 +83,28 @@ for i in range(n - 2, -1, -1):
 
 
 print(nums)
+
+
+"""
+Write a program to sort a list of numbers in ascending order using Selection Sort.
+"""
+
+
+def selection_sort(nums):
+    n = len(nums)
+
+    for i in range(0, n):
+        mini_index = i
+
+        for j in range(i + 1, n):
+            if nums[j] < nums[mini_index]:
+                mini_index = j
+
+        nums[i], nums[mini_index] = nums[mini_index], nums[i]
+
+
+nums = [8, 3, 5, 1, 6, 4, 9, 2, 7, 8]
+
+selection_sort(nums)
+
+print(nums)
