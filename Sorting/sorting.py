@@ -108,3 +108,19 @@ nums = [8, 3, 5, 1, 6, 4, 9, 2, 7, 8]
 selection_sort(nums)
 
 print(nums)
+
+
+"""
+Write a program to sort a list of numbers in ascending order using Bubble Sort.
+"""
+
+nums = [6, 2, 8, 1, 4, 5, 12, 11, 10, 14, 17, 19, 23, 34, 45]
+
+n = len(nums)
+
+for i in range(n - 2, -1, -1):
+    for j in range(0, i + 1):
+        if nums[j] > nums[j + 1]:
+            nums[j], nums[j + 1] = nums[j + 1], nums[j]
+
+print(nums)
