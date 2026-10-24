@@ -20,3 +20,25 @@ for i in range(1, n):
 
 
 print(nums)
+
+
+# Another one
+
+nums = [2, 11, 4, 6, 45, 6, 54, 21, 32, 7, 5, 4, 3, 1]
+
+n = len(nums)
+
+for i in range(1, n):
+
+    key = nums[i]
+    j = i - 1
+
+    while j >= 0 and nums[j] > key:
+        nums[j + 1] = nums[j]
+
+        j -= 1
+
+    nums[j + 1] = key
+
+
+print(nums)
