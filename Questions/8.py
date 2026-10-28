@@ -72,3 +72,19 @@ for i in range(n - 2, -1, -1):
             mobiles[j], mobiles[j + 1] = mobiles[j + 1], mobiles[j]
 
 print(mobiles)
+
+
+"""
+Write a program to sort a list of city names in alphabetical order using Bubble Sort
+"""
+
+cities = ["Delhi", "Mumbai", "Agra", "Jaipur", "Bhopal"]
+
+n = len(cities)
+
+for i in range(n - 2, -1, -1):
+    for j in range(0, i + 1):
+        if cities[j] > cities[j + 1]:
+            cities[j], cities[j + 1] = cities[j + 1], cities[j]
+
+print(cities)
