@@ -56,3 +56,19 @@ for i in range(n - 2, -1, -1):
             nums[j], nums[j + 1] = nums[j + 1], nums[j]
 
 print(nums)
+
+
+"""
+Write a program to sort a list of mobile brands in alphabetical order using Bubble Sort
+"""
+
+mobiles = ["Samsung", "Apple", "Vivo", "OnePlus", "Oppo"]
+
+n = len(mobiles)
+
+for i in range(n - 2, -1, -1):
+    for j in range(0, i + 1):
+        if mobiles[j] > mobiles[j + 1]:
+            mobiles[j], mobiles[j + 1] = mobiles[j + 1], mobiles[j]
+
+print(mobiles)
