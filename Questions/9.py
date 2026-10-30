@@ -38,3 +38,24 @@ for i in range(1, n):
     mobiles[j + 1] = key
 
 print(mobiles)
+
+
+"""
+Write a program to sort a list of city names in alphabetical order using Insertion Sort
+"""
+
+cities = ["Delhi", "Mumbai", "Agra", "Jaipur", "Bhopal"]
+
+n = len(cities)
+
+for i in range(1, n):
+    key = cities[i]
+    j = i - 1
+
+    while j >= 0 and cities[j] > key:
+        cities[j + 1] = cities[j]
+        j -= 1
+
+    cities[j + 1] = key
+
+print(cities)
