@@ -18,3 +18,21 @@ for i in range(n):
     cars[i], cars[mini_index] = cars[mini_index], cars[i]
 
 print(cars)
+
+
+# Bubble Sort Program
+
+"""
+Write a program to sort a list of numbers in ascending order using Bubble Sort
+"""
+
+nums = [40, 12, 64, 56, 78, 98, 76, 45, 32, 234, 10, 30, 20, 5]
+
+n = len(nums)
+
+for i in range(n - 2, -1, -1):
+    for j in range(0, i + 1):
+        if nums[j] > nums[j + 1]:
+            nums[j], nums[j + 1] = nums[j + 1], nums[j]
+
+print(nums)
