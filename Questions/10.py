@@ -59,3 +59,24 @@ for i in range(1, n):
     nums[j + 1] = key
 
 print(nums)
+
+
+"""
+Write a program to sort a list of subjects in alphabetical order using Insertion Sort
+"""
+
+subjects = ["Python", "Maths", "English", "Science", "Hindi", "Java"]
+
+n = len(subjects)
+
+for i in range(1, n):
+    key = subjects[i]
+    j = i - 1
+
+    while j >= 0 and subjects[j] > key:
+        subjects[j + 1] = subjects[j]
+        j -= 1
+
+    subjects[j + 1] = key
+
+print(subjects)
