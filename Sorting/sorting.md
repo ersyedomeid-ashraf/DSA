@@ -72,3 +72,23 @@ Example:
 [5, 3, 8, 2]
 
 → After sorting: [2, 3, 5, 8]
+
+
+
+Quick Sort -:
+
+→ Quick Sort is a sorting algorithm that selects one element as a pivot.
+
+→ It divides the array into two parts based on the pivot.
+
+→ Elements smaller than the pivot are placed on the left side.
+
+→ Elements greater than the pivot are placed on the right side.
+
+→ This process repeats until the complete array is sorted.
+
+Example:
+
+[5, 3, 8, 2]
+
+→ After sorting: [2, 3, 5, 8]
