@@ -173,3 +173,48 @@ def merge_sort(arr):
 
 
 print(merge_sort(mobiles))
+
+
+# Quick Sort Program
+
+"""
+Write a program to sort a list of cities in alphabetical order using Quick Sort.
+"""
+
+cities = ["Delhi", "Agra", "Mumbai", "Jaipur", "Chennai", "Bhopal", "Kolkata", "Pune"]
+
+
+def partition(cities, low, high):
+
+    pivot = cities[low]
+
+    i = low
+    j = high
+
+    while i < j:
+
+        while cities[i] <= pivot and i <= high - 1:
+            i += 1
+
+        while cities[j] > pivot and j >= low + 1:
+            j -= 1
+
+        if i < j:
+            cities[i], cities[j] = cities[j], cities[i]
+
+    cities[low], cities[j] = cities[j], cities[low]
+
+    return j
+
+
+def quick_sort(cities, low, high):
+
+    if low < high:
+
+        p_index = partition(cities, low, high)
+        quick_sort(cities, low, p_index - 1)
+        quick_sort(cities, p_index + 1, high)
+
+
+quick_sort(cities, 0, len(cities) - 1)
+print(cities)
