@@ -15,3 +15,22 @@ for i in range(0, len(nums)):
         second_largest = nums[i]
 
 print(second_largest)
+
+
+# Better Solution Code
+
+nums = [65, 78, 96, 97, 99, 90, 43, 54, 31, 23, 32, 11, 28, 79, 65]
+
+largest = float("-infinity")
+second_largest = float("-infinity")
+
+n = len(nums)
+
+for i in range(0, n):
+    largest = max(largest, nums[i])
+
+for i in range(0, n):
+    if nums[i] > second_largest and nums[i] != largest:
+        second_largest = nums[i]
+
+print(second_largest)
