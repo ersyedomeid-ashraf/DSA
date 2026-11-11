@@ -59,3 +59,26 @@ for i in range(0, n):
         second_largest = nums[i]
 
 print(second_largest)
+
+
+"""
+Write a program to find the second largest element in an array using Optimal Solution
+"""
+
+nums = [964, 873, 299, 745, 693, 416, 827, 859, 972]
+
+largest = float("-infinity")
+second_largest = float("-infinity")
+
+n = len(nums)
+
+for i in range(0, n):
+
+    if nums[i] > largest:
+        second_largest = largest
+        largest = nums[i]
+
+    elif nums[i] > second_largest and nums[i] != largest:
+        second_largest = nums[i]
+
+print(second_largest)
