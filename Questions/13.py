@@ -34,3 +34,22 @@ for i in range(0, n):
         second_largest = nums[i]
 
 print(second_largest)
+
+
+# Optimal Solution Code
+
+nums = [34, 66, 78, 98, 90, 65, 43, 33, 21, 23, 99, 87, 98, 65, 43, 45, 66, 88]
+
+largest = float("-infinity")
+second_largest = float("-infinity")
+
+for i in range(0, n):
+
+    if nums[i] > largest:
+        second_largest = largest
+        largest = nums[i]
+
+    elif nums[i] > second_largest and nums[i] != largest:
+        second_largest = nums[i]
+
+print(second_largest)
