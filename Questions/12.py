@@ -28,3 +28,19 @@ for i in range(0, n):
     largest = max(largest, nums[i])
 
 print(largest)
+
+
+"""
+Write a program to find the largest element in an array.
+"""
+
+nums = [45, 65, 67, 78, 98, 99, 32, 45, 65, 78, 22]
+
+largest = nums[0]
+n = len(nums)
+
+for i in range(0, n):
+
+    largest = max(largest, nums[i])
+
+print(largest)
