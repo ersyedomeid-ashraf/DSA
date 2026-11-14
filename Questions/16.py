@@ -68,3 +68,25 @@ for k in freq_map:
 
 print(j)
 print(nums[:j])
+
+
+# Another one
+
+nums = [66, 55, 22, 66, 55, 33, 22, 88, 22, 3, 11, 44, 66, 77, 55]
+
+n = len(nums)
+
+freq_map = {}
+
+for i in range(0, n):
+    freq_map[nums[i]] = 0
+
+j = 0
+
+for k in freq_map:
+    nums[j] = k
+
+    j += 1
+
+print(j)
+print(nums[:j])
