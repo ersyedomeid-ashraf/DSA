@@ -45,3 +45,26 @@ for k in freq_map:
 
 print(j)
 print(nums[:j])
+
+
+"""
+Write a program to remove duplicates from a unsorted array.
+"""
+
+nums = [6, 5, 6, 7, 8, 9, 8, 7, 5, 4, 3, 1, 2, 1, 3, 4, 5, 9, 8, 7, 6, 8, 9, 10]
+
+n = len(nums)
+
+freq_map = {}
+
+for i in range(0, n):
+    freq_map[nums[i]] = 0
+
+j = 0
+
+for k in freq_map:
+    nums[j] = k
+    j += 1
+
+print(j)
+print(nums[:j])
