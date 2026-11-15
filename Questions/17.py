@@ -31,3 +31,23 @@ for i in range(n - 2, -1, -1):
 nums[0] = temp
 
 print(nums)
+
+
+"""
+Write a program to right rotate an array by one position.
+"""
+
+# Using Temporary Variable
+
+nums = [2, 3, 1, 4, 6, 8, 9, 6, 10, -2]
+
+n = len(nums)
+
+temp = nums[n - 1]
+
+for i in range(n - 2, -1, -1):
+    nums[i + 1] = nums[i]
+
+nums[0] = temp
+
+print(nums)
