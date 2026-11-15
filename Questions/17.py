@@ -51,3 +51,18 @@ for i in range(n - 2, -1, -1):
 nums[0] = temp
 
 print(nums)
+
+
+"""
+Write a program to right rotate an array by one position.
+"""
+
+# Using Slicing
+
+nums = [22, 3, 44, 11, 55, -44, -6, 56, 87, -21, 72]
+
+n = len(nums)
+
+nums[:] = [nums[-1]] + nums[0 : n - 1]
+
+print(nums)
