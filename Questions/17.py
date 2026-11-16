@@ -66,3 +66,33 @@ n = len(nums)
 nums[:] = [nums[-1]] + nums[0 : n - 1]
 
 print(nums)
+
+
+"""
+Write a program to right rotate an array by one position.
+"""
+
+# Using Slicing
+
+nums = [
+    33,
+    -45,
+    4,
+    6,
+    7,
+    8,
+    76,
+    32,
+    -1,
+    3,
+    4,
+    676,
+    89,
+    -23,
+]
+
+n = len(nums)
+
+nums[:] = [nums[-1]] + nums[0 : n - 1]
+
+print(nums)
