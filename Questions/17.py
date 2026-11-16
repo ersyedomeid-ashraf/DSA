@@ -96,3 +96,19 @@ n = len(nums)
 nums[:] = [nums[-1]] + nums[0 : n - 1]
 
 print(nums)
+
+
+# Using Temporary Variable
+
+nums = [445, -54, 3 - 44, 56, 77, 53, -66, 77 - 100, -56, 98, 29, -78]
+
+n = len(nums)
+
+temp = nums[n - 1]
+
+for i in range(n - 2, -1, -1):
+    nums[i + 1] = nums[i]
+
+nums[0] = temp
+
+print(nums)
