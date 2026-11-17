@@ -56,3 +56,19 @@ k = k % n
 nums[:] = nums[n - k :] + nums[: n - k]
 
 print(nums)
+
+
+# Another one
+
+# Better Solution
+
+nums = [12, 32, 79, 86, 75, 67, 30, 20, 77]
+
+n = len(nums)
+
+k = 5
+k = k % n
+
+nums[:] = nums[n - k :] + nums[: n - k]
+
+print(nums)
