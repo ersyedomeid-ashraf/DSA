@@ -38,3 +38,21 @@ for _ in range(0, rotations):
     nums.insert(0, e)
 
 print(nums)
+
+
+"""
+Write a program to right rotate an array by k positions
+"""
+
+# Better Solution (Using Slicing)
+
+nums = [3, 9, 5, 6, 7, 2, 10, 9]
+
+n = len(nums)
+
+k = 5
+k = k % n
+
+nums[:] = nums[n - k :] + nums[: n - k]
+
+print(nums)
