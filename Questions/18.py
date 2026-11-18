@@ -100,3 +100,33 @@ reverse(nums, 0, n - k - 1)
 reverse(nums, 0, n - 1)
 
 print(nums)
+
+
+# Another one
+
+"""
+Write a program to right rotate an array by k positions.
+"""
+
+# Optimal Approach (Using Reversal Algorithm)
+
+nums = [34, 56, 78, 98, 75, 53, 31, 21, 11, 10]
+
+n = len(nums)
+
+k = 5
+k = k % n
+
+
+def reverse(nums, left, right):
+    while left < right:
+        nums[left], nums[right] = nums[right], nums[left]
+        left += 1
+        right -= 1
+
+
+reverse(nums, n - k, n - 1)
+reverse(nums, 0, n - k - 1)
+reverse(nums, 0, n - 1)
+
+print(nums)
