@@ -42,3 +42,27 @@ def linear_search(nums, target):
 
 
 print(linear_search(nums, target))
+
+
+"""
+Write a program to search for a target element in an array using Linear Search.
+"""
+
+nums = [67, 4, 5, 55, 89, 32, 65, 87, 98, 23, 45, 23]
+
+target = 45
+
+
+n = len(nums)
+
+
+def linear_search(nums, target):
+    for i in range(0, n):
+
+        if nums[i] == target:
+            return i
+
+    return -1
+
+
+print(linear_search(nums, target))
