@@ -120,3 +120,37 @@ while j < len(names2):
     j += 1
 
 print(result)
+
+
+"""
+Write a program to merge two sorted arrays into a single sorted array without duplicates.
+"""
+
+
+cities1 = ["Agra", "Delhi", "Jaipur", "Mumbai"]
+cities2 = ["Bhopal", "Chennai", "Kolkata", "Pune"]
+
+result = []
+
+i = 0
+j = 0
+
+while i < len(cities1) and j < len(cities2):
+
+    if cities1[i] <= cities2[j]:
+        result.append(cities1[i])
+        i += 1
+
+    else:
+        result.append(cities2[j])
+        j += 1
+
+while i < len(cities1):
+    result.append(cities1[i])
+    i += 1
+
+while j < len(cities2):
+    result.append(cities2[j])
+    j += 1
+
+print(result)
