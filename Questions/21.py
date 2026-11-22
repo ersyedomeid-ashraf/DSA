@@ -86,3 +86,37 @@ while j < m:
     j += 1
 
 print(result)
+
+
+"""
+Write a program to merge two sorted arrays into a single sorted array without duplicates.
+"""
+
+
+names1 = ["Aman", "Deepak", "Rahul", "Rohit"]
+names2 = ["Ankit", "Karan", "Raj", "Vijay"]
+
+result = []
+
+i = 0
+j = 0
+
+while i < len(names1) and j < len(names2):
+
+    if names1[i] <= names2[j]:
+        result.append(names1[i])
+        i += 1
+
+    else:
+        result.append(names2[j])
+        j += 1
+
+while i < len(names1):
+    result.append(names1[i])
+    i += 1
+
+while j < len(names2):
+    result.append(names2[j])
+    j += 1
+
+print(result)
