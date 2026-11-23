@@ -39,3 +39,42 @@ for i in range(n - 2, -1, -1):
             nums[j], nums[j + 1] = nums[j + 1], nums[j]
 
 print(nums)
+
+
+"""
+Write a program to check whether an array is sorted in ascending order or not.
+"""
+
+nums = [32, 34, 45, 4, 67, 77, 87, 89, 90, 92, 11, 23]
+
+
+def isSorted(nums):
+
+    n = len(nums)
+
+    for i in range(0, n - 1):
+        if nums[i] > nums[i + 1]:
+            return False
+
+    return True
+
+
+print(isSorted(nums))
+
+# OR
+
+nums = [12, 23, 34, 45, 56, 67, 78, 89, 90]
+
+
+def isSorted(nums):
+
+    n = len(nums)
+
+    for i in range(0, n - 1):
+        if nums[i] > nums[i + 1]:
+            return False
+
+    return True
+
+
+print(isSorted(nums))
