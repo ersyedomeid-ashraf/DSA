@@ -78,3 +78,63 @@ def isSorted(nums):
 
 
 print(isSorted(nums))
+
+
+"""
+Write a program to right rotate an array by k positions.
+"""
+
+# Brute Force Approach
+
+nums = [32, 34, 45, 4, 67, 77, 87, 89, 90, 92, 11, 23]
+
+k = 3
+
+n = len(nums)
+
+rotations = k % n
+
+for _ in range(0, rotations):
+    # (_) is used because we don't need the loop variable, only repeat the loop
+    e = nums.pop()
+    nums.insert(0, e)
+
+print(nums)
+
+
+# Better Solution (Using Slicing)
+
+nums = [98, 79, 57, 76, 24, 35, 51, 22, 10]
+
+n = len(nums)
+
+k = 5
+k = k % n
+
+nums[:] = nums[n - k :] + nums[: n - k]
+
+print(nums)
+
+
+# Optimal Approach (Using Reversal Algorithm)
+
+nums = [44, 33, 56, 77, 88, 90, 22, 32, 12, 11]
+
+n = len(nums)
+
+k = 5
+k = k % n
+
+
+def reverse(nums, left, right):
+    while left < right:
+        nums[left], nums[right] = nums[right], nums[left]
+        left += 1
+        right -= 1
+
+
+reverse(nums, n - k, n - 1)
+reverse(nums, 0, n - k - 1)
+reverse(nums, 0, n - 1)
+
+print(nums)
