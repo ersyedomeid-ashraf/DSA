@@ -173,3 +173,27 @@ n = len(nums)
 nums[:] = [nums[-1]] + nums[0 : n - 1]
 
 print(nums)
+
+
+"""
+Write a program to search for a target element in an array using Linear Search.
+"""
+
+nums = [46, 68, -76, 53, 90, 87, -20, 65, 51, 34, 66, 88, 55]
+
+target = 65
+
+
+n = len(nums)
+
+
+def linear_search(nums, target):
+    for i in range(0, n):
+
+        if nums[i] == target:
+            return i
+
+    return -1
+
+
+print(linear_search(nums, target))
