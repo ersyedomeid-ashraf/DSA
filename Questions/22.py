@@ -276,3 +276,41 @@ while j < len(cities2):
     j += 1
 
 print(result)
+
+
+"""
+Write a program to merge two sorted lists of countries into a single sorted list without duplicates.
+"""
+
+
+countries1 = ["Australia", "Canada", "France", "India"]
+countries2 = ["Brazil", "China", "Germany", "Japan"]
+
+result = []
+
+i = 0
+j = 0
+
+while i < len(countries1) and j < len(countries2):
+
+    if countries1[i] <= countries2[j]:
+        if len(result) == 0 or result[-1] != countries1[i]:
+            result.append(countries1[i])
+        i += 1
+
+    else:
+        if len(result) == 0 or result[-1] != countries2[j]:
+            result.append(countries2[j])
+        j += 1
+
+while i < len(countries1):
+    if len(result) == 0 or result[-1] != countries1[i]:
+        result.append(countries1[i])
+    i += 1
+
+while j < len(countries2):
+    if len(result) == 0 or result[-1] != countries2[j]:
+        result.append(countries2[j])
+    j += 1
+
+print(result)
