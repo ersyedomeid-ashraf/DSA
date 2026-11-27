@@ -336,3 +336,22 @@ def linear_search(nums, target):
 
 
 print(linear_search(nums, target))
+
+
+"""
+WAP to print "Gulaaboo" 8 times using recursion.
+"""
+
+count = [0]
+
+
+def func():
+    if count[0] == 8:
+        return
+
+    count[0] = count[0] + 1
+    func()
+    print("Gulaaboo")
+
+
+func()
